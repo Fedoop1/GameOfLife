@@ -120,6 +120,11 @@
             // Dencity
             // 
             this.Dencity.Location = new System.Drawing.Point(13, 84);
+            this.Dencity.Maximum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
             this.Dencity.Minimum = new decimal(new int[] {
             1,
             0,
@@ -129,7 +134,7 @@
             this.Dencity.Size = new System.Drawing.Size(120, 20);
             this.Dencity.TabIndex = 3;
             this.Dencity.Value = new decimal(new int[] {
-            2,
+            25,
             0,
             0,
             0});
@@ -143,7 +148,7 @@
             0,
             0});
             this.Resolution.Minimum = new decimal(new int[] {
-            1,
+            3,
             0,
             0,
             0});
@@ -184,7 +189,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(615, 446);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // timer1
             // 
@@ -200,7 +204,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "GameOfLife";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -220,12 +223,12 @@
         private System.Windows.Forms.NumericUpDown Resolution;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.Button BtnStart;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
